@@ -1,12 +1,14 @@
 # Building
 
 ## Dependencies
-This code depends on two libraries that can be easily installed with `vcpkg` or with your distribution package manager:
+
+This code depends on the following libraries that can be easily installed with `vcpkg` or with your distribution package manager:
 
 1. GLEW
-2. GLFW (glfw3)
+1. GLFW (glfw3)
+1. OpenGL
 
-Both are already configured in [`CMakeLists.txt`](ModernOpenGLUdemy/CMakeLists.txt).
+Dependencies are already configured in [`CMakeLists.txt`](ModernOpenGLUdemy/CMakeLists.txt).
 
 ## Windows
 
