@@ -9,9 +9,19 @@ find_package(glfw3 CONFIG REQUIRED)
 find_package(OpenGL REQUIRED)
 
 # Add source to this project's executable.
-add_executable(ModernOpenGLUdemy "main.cpp")
+add_executable(ModernOpenGLUdemy)
 
-target_compile_features(ModernOpenGLUdemy PUBLIC cxx_std_17)
+target_sources(ModernOpenGLUdemy
+    PRIVATE
+      main.cpp
+)
+
+set_target_properties(ModernOpenGLUdemy
+    PROPERTIES
+      CXX_STANDARD 17
+      CXX_STANDARD_REQUIRED ON
+)
+
 target_link_libraries(ModernOpenGLUdemy PRIVATE GLEW::GLEW glfw OpenGL::GL)
 
 # TODO: Add tests and install targets if needed.
