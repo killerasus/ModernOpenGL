@@ -2,7 +2,8 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-const GLint WIDTH = 800, HEIGHT = 600;
+constexpr GLint WIDTH = 800;
+constexpr GLint HEIGHT = 600;
 
 int main()
 {
@@ -32,7 +33,8 @@ int main()
 	}
 
 	// Get buffer size information
-	int bufferWidth = -1, bufferHeight = -1;
+	int bufferWidth = -1;
+	int bufferHeight = -1;
 	glfwGetFramebufferSize(mainWindow, &bufferWidth, &bufferHeight);
 
 	// Set context for GLEW to use
