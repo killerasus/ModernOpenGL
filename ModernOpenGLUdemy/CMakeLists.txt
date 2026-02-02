@@ -1,6 +1,3 @@
-# CMakeList.txt : CMake project for ModernOpenGLUdemy, include source and define
-# project specific logic here.
-#
 cmake_minimum_required(VERSION 3.21)
 
 # Required packages
@@ -10,6 +7,8 @@ find_package(OpenGL REQUIRED)
 
 # Add source to this project's executable.
 add_executable(ModernOpenGLUdemy)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 
 target_sources(ModernOpenGLUdemy
     PRIVATE
